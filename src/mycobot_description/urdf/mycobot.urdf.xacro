@@ -1,0 +1,194 @@
+<?xml version="1.0" ?>
+<robot name="mycobot320" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+<xacro:include filename="$(find mycobot_description)/urdf/materials.xacro" />
+<link name="base_link">
+  <inertial>
+    <origin xyz="-1.3994637957346424e-08 0.046320428630226694 0.053625500753973876" rpy="0 0 0"/>
+    <mass value="12.899764355948896"/>
+    <inertia ixx="0.033823" iyy="0.028162" izz="0.035033" ixy="0.0" iyz="-0.000755" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find mycobot_description)/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find mycobot_description)/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component2_1">
+  <inertial>
+    <origin xyz="0.006896766224730391 -3.4711337727755254e-07 0.05549014255068621" rpy="0 0 0"/>
+    <mass value="3.4735206294395446"/>
+    <inertia ixx="0.004461" iyy="0.004757" izz="0.002424" ixy="0.0" iyz="0.0" ixz="-0.000777"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.0 -0.060072 -0.114761" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find mycobot_description)/meshes/Component2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.0 -0.060072 -0.114761" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find mycobot_description)/meshes/Component2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component3_1">
+  <inertial>
+    <origin xyz="0.03690658575567238 -3.4711337713183577e-07 0.06799995568162978" rpy="0 0 0"/>
+    <mass value="5.91988968680626"/>
+    <inertia ixx="0.0188" iyy="0.019335" izz="0.004161" ixy="0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.045 -0.060072 -0.199761" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find mycobot_description)/meshes/Component3_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.045 -0.060072 -0.199761" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find mycobot_description)/meshes/Component3_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component4_1">
+  <inertial>
+    <origin xyz="-0.03502268825299208 -3.4711337702081346e-07 0.049499955681629404" rpy="0 0 0"/>
+    <mass value="4.802107093668197"/>
+    <inertia ixx="0.01014" iyy="0.010584" izz="0.003386" ixy="0.0" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.045 -0.060072 -0.335761" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find mycobot_description)/meshes/Component4_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.045 -0.060072 -0.335761" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find mycobot_description)/meshes/Component4_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component5_1">
+  <inertial>
+    <origin xyz="0.03442387286919234 -3.4711337690979116e-07 0.010576082812437049" rpy="0 0 0"/>
+    <mass value="2.265107015236222"/>
+    <inertia ixx="0.001595" iyy="0.001803" izz="0.001595" ixy="0.0" iyz="0.0" ixz="-0.000324"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.045 -0.060072 -0.434761" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find mycobot_description)/meshes/Component5_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.045 -0.060072 -0.434761" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find mycobot_description)/meshes/Component5_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component6_1">
+  <inertial>
+    <origin xyz="6.938893903907228e-17 -3.4711337680570775e-07 0.04211665218776295" rpy="0 0 0"/>
+    <mass value="3.029827579494103"/>
+    <inertia ixx="0.0025" iyy="0.002976" izz="0.002441" ixy="0.0" iyz="-0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.09 -0.060072 -0.479761" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find mycobot_description)/meshes/Component6_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.09 -0.060072 -0.479761" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find mycobot_description)/meshes/Component6_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component7_1">
+  <inertial>
+    <origin xyz="0.010000000000000092 -3.471133767779522e-07 -4.4318370751028624e-08" rpy="0 0 0"/>
+    <mass value="0.6042068071016569"/>
+    <inertia ixx="0.00037" iyy="0.000205" izz="0.000205" ixy="0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.13 -0.060072 -0.529761" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find mycobot_description)/meshes/Component7_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.13 -0.060072 -0.529761" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find mycobot_description)/meshes/Component7_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<joint name="Revolute 1" type="continuous">
+  <origin xyz="0.0 0.060072 0.114761" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="Component2_1"/>
+  <axis xyz="-0.0 0.0 1.0"/>
+</joint>
+
+<joint name="Revolute 2" type="continuous">
+  <origin xyz="0.045 0.0 0.085" rpy="0 0 0"/>
+  <parent link="Component2_1"/>
+  <child link="Component3_1"/>
+  <axis xyz="1.0 -0.0 0.0"/>
+</joint>
+
+<joint name="Revolute 3" type="continuous">
+  <origin xyz="0.0 0.0 0.136" rpy="0 0 0"/>
+  <parent link="Component3_1"/>
+  <child link="Component4_1"/>
+  <axis xyz="-1.0 0.0 -0.0"/>
+</joint>
+
+<joint name="Revolute 4" type="continuous">
+  <origin xyz="0.0 0.0 0.099" rpy="0 0 0"/>
+  <parent link="Component4_1"/>
+  <child link="Component5_1"/>
+  <axis xyz="1.0 0.0 0.0"/>
+</joint>
+
+<joint name="Revolute 5" type="continuous">
+  <origin xyz="0.045 0.0 0.045" rpy="0 0 0"/>
+  <parent link="Component5_1"/>
+  <child link="Component6_1"/>
+  <axis xyz="0.0 0.0 1.0"/>
+</joint>
+
+<joint name="Revolute 6" type="continuous">
+  <origin xyz="0.04 0.0 0.05" rpy="0 0 0"/>
+  <parent link="Component6_1"/>
+  <child link="Component7_1"/>
+  <axis xyz="1.0 -0.0 0.0"/>
+</joint>
+
+</robot>
